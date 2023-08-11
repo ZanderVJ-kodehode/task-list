@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java uke 2</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- this div takes the space of the full screen -->
+    <div class="container">
+        <!-- this takes the space of a box in the middel of the screen -->
+         <div class="todo-app">
+            <!-- this add a h2 and a img in the same line -->
+
+            <h2>To do list</h2>
+            <!-- this is making the text and button input -->
+                <div class="row">
+                    <input type="text" id="input-box" placeholder="Add your text">
+                    <button onclick="addTask()">Add</button>
+                </div>
+                <!-- this button whil sort the list -->
+                <div class="para"><p id="errorMessage"></p></div>
+                <button id="sortA">Sort</button>
+                <p id="errorMessage"></p>
+                <!-- this is making the ul that will keep going down -->
+                <ul id="list-container">
+
+                    <!-- this is a test befor the javascript to make things work -->
+
+                   <!-- <li class="checked">Task 1</li> 
+                   <li>Task 2</li>
+                   <li>Task 3</li> -->
+                </ul>
+         </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,166 @@
+/* this is making the full screen change */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+/* this is me trying to change the curser to a img to the full screen, i wasent abel to make it work */
+body{
+    cursor: url(32px.png), auto;
+}
+
+/* this is the container that takes the full screen. wher i have changed the background */
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    padding: 100px;
+}
+
+/* this is the container of the div i have button and other stuff in 
+i have changed the size and the background color. I have changed the margin and padding whit some border radius whit a linear background*/
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    /* background:#fff; */
+    background: transparent;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    /* background: linear-gradient(100deg, #e6e6e6, #747175); */
+}
+
+
+/* changing the h2 text and img whit color abd flex to make them fit better */
+.todo-app h2{
+    color: #e75b1f;
+    font-size: xx-large;
+    /* display: flex;
+    align-items: center; */
+    text-align: center;
+    margin-bottom: 20px;
+   text-decoration: underline;
+}
+
+/* changing the size of the img */
+/* .todo-app h2 img{
+    width: 40px;
+    margin-left: 10px;
+    border-radius: 30%;
+} */
+
+/* this is the input text and the button 
+this is making it align and changing the rest*/
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #e5e7ea;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+/* this is changing the input */
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 15px;
+}
+
+/* changing the button */
+button{
+    border: none;
+    outline: none;
+    padding:15px 50px;
+    background: #e75b1f;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+/* changing the error note when you have nothing in the input */
+#errorMessage{
+    color: red;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* making this para for a div so that i can have the <p> in whitout it moving everyhing down. */
+.para{
+    height: 30px;
+}
+/* changing the butten when i hover over it */
+button:hover{
+    color: black;
+    background-color: red;
+    box-shadow: 0 0 5px black;
+}
+
+/* this is changing the li in the ul */
+ul li{
+    list-style: none;
+    font-size: 15px;
+    padding: 12px 15px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    color: #e75b1f;
+}
+
+/* changing the li befor it is cheked */
+ul li::before{
+    content: "";
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(emok.avif);
+    border: 1px solid grey;
+    background-size: cover;
+    background-position: center;
+    top: 7px;
+    left: 8px;
+}
+
+/* making it so when i checked it this will happen */
+ul li.checked{
+    color:#f40303;
+    text-decoration: line-through;
+}
+
+/* this is making the a img as a backgound img */
+ul li.checked::before{
+    background-image: url(emglad1.png);
+}
+
+/* changing the span i made whit javascript */
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    color: #e75b1f;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+/* changing the hover effect of the span */
+ul li span:hover{
+    background: #edeef0;
+}
+
+
+/* havent done anything whit this one yet */
+@media screen {
+   
+}
